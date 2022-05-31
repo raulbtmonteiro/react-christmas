@@ -1,6 +1,6 @@
 import shared from '../../assets/images/shared.png'
 import DonationButton from '../donationButton/donationButton'
-import { DonationContainer , DonationWrapper , DonationInfo, DonationTitle , DonationDescription } from './style'
+import { DonationImg , DonationContainer , DonationWrapper , DonationInfo, DonationTitle , DonationDescription } from './style'
 import { light } from '../../themes/light'
 
 export default function Donation(){
@@ -8,7 +8,7 @@ export default function Donation(){
     return(
         <DonationContainer theme={light}>
             <DonationWrapper>
-                <img src={shared} alt='' />
+                <DonationImg src={shared} alt='' />
                 <DonationInfo>
                     <DonationTitle theme={light}> Comemore com <br/>muito amor!</DonationTitle>
                     <DonationDescription theme={light}>

@@ -11,11 +11,29 @@ export const DonationWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 1170px) {
+        padding: 0 24px;
+    }
+`;
+
+export const DonationImg = styled.img`
+    @media screen and (max-width: 720px) {
+        display: none;
+    }
 `;
 
 export const DonationInfo = styled.div`
     button{
         margin-bottom: 8.9em;
+    }
+
+    @media screen and (max-width: 720px) {
+        text-align: center;
+
+        button{
+            margin-bottom: 5.5em;
+        }
     }
 `;
 
@@ -27,6 +45,10 @@ export const DonationTitle = styled.h2`
     margin-top: 3.2em;
 
     color: ${props => props.theme.titleColor};
+
+    @media screen and (max-width: 720px) {
+        font-size: 24px;
+    }
 `;
 
 export const DonationDescription = styled.p`
@@ -38,4 +60,9 @@ export const DonationDescription = styled.p`
     max-width: 457px;
 
     color: ${props => props.theme.descriptionColor};
+
+    @media screen and (max-width: 720px) {
+        font-size: 14px;
+        margin: 1.5em auto 2em auto;
+    }
 `;

@@ -21,4 +21,9 @@ export const Button = styled.button`
     img{
         margin-right: 0.85em;
     }
+
+    @media screen and (max-width: 720px) {
+        width: 100%;
+        font-size: 14px;
+    }
 `;

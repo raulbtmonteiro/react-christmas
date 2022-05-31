@@ -3,8 +3,8 @@ import youtube from '../../assets/images/youtube.svg'
 import linkedin from '../../assets/images/linkedin.svg'
 import instagram from '../../assets/images/instagram.svg'
 import facebook from '../../assets/images/facebook.svg'
-import Logo from '../logo/logo'
-import { FooterWrapper , MediaList , ListItem } from './style'
+import frame from '../../assets/images/Frame.png'
+import { FooterWrapper , MediaList , ListItem , DivLogo , LogoTitle } from './style'
 import { light } from '../../themes/light'
 
 export default function Footer(){
@@ -36,7 +36,10 @@ export default function Footer(){
 
     return(
         <FooterWrapper>
-            <Logo />
+            <DivLogo>
+                <img src={frame} alt='' />
+                <LogoTitle theme={light}>Feliz Natal</LogoTitle>
+            </DivLogo>
             <MediaList>
                 {navItens.map( (item) => (
                     <ListItem key={item.link} theme={light}><img src={item.icon} /></ListItem>

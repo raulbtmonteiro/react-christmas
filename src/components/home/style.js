@@ -12,14 +12,22 @@ export const HomeWrapper= styled.div`
     justify-content: space-between;
     align-items: center;
 
-    img{
-        max-height: 360px;
+    @media screen and (max-width: 1170px) {
+        padding: 0 24px;
     }
 `;
 
 export const HomeInfo = styled.div`
     button{
         margin-bottom: 12em;
+    }
+
+    @media screen and (max-width: 720px) {
+        text-align: center;
+
+        button{
+            margin-bottom: 5em;
+        }
     }
 `;
 
@@ -31,6 +39,10 @@ export const HomeTitle = styled.h1`
     margin-top: 2em;
 
     color: ${props => props.theme.titleColor};
+
+    @media screen and (max-width: 720px) {
+        font-size: 32px;
+    }
 `;
 
 export const HomeDescription = styled.p`
@@ -42,4 +54,16 @@ export const HomeDescription = styled.p`
     max-width: 444px;
 
     color: ${props => props.theme.descriptionColor};
+
+    @media screen and (max-width: 720px) {
+        font-size: 14px;
+    }
+`;
+
+export const HomeImg = styled.img`
+    max-height: 360px;
+
+    @media screen and (max-width: 720px) {
+        display: none;
+    }
 `;

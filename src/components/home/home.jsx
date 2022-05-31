@@ -1,6 +1,6 @@
 import send from '../../assets/images/send.png'
 import DonationButton from '../donationButton/donationButton'
-import { HomeContainer , HomeWrapper, HomeInfo , HomeTitle , HomeDescription} from './style'
+import { HomeContainer , HomeWrapper, HomeInfo , HomeTitle , HomeDescription , HomeImg} from './style'
 import { light } from '../../themes/light'
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
                     </HomeDescription>
                     <DonationButton />
                 </HomeInfo>
-                <img src={send} atl='' />
+                <HomeImg src={send} atl='' />
             </HomeWrapper>
         </HomeContainer>
     )
