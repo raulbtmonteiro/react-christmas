@@ -30,6 +30,7 @@ export const DonationInfo = styled.div`
 
     @media screen and (max-width: 720px) {
         text-align: center;
+        margin: 0 auto;
 
         button{
             margin-bottom: 5.5em;

@@ -24,6 +24,7 @@ export const HomeInfo = styled.div`
 
     @media screen and (max-width: 720px) {
         text-align: center;
+        margin: 0 auto;
 
         button{
             margin-bottom: 5em;
