@@ -15,7 +15,7 @@ export default function Home() {
                     </HomeDescription>
                     <DonationButton />
                 </HomeInfo>
-                <img src={send} />
+                <img src={send} atl='' />
             </HomeWrapper>
         </HomeContainer>
     )

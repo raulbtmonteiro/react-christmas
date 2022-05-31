@@ -5,7 +5,7 @@ import { light } from '../../themes/light'
 export default function Logo(){
     return(
         <DivLogo>
-            <img src={frame} />
+            <img src={frame} alt='' />
             <LogoTitle theme={light}>Feliz Natal</LogoTitle>
         </DivLogo>
     )

@@ -4,6 +4,6 @@ import { Button } from "./style"
 
 export default function DonationButton(){
     return(
-        <Button theme={light}><img src={gift}/>Fazer Doação</Button>
+        <Button theme={light}><img src={gift} alt='' />Fazer Doação</Button>
     )
 }

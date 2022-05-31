@@ -8,7 +8,7 @@ export default function Donation(){
     return(
         <DonationContainer theme={light}>
             <DonationWrapper>
-                <img src={shared} />
+                <img src={shared} alt='' />
                 <DonationInfo>
                     <DonationTitle theme={light}> Comemore com <br/>muito amor!</DonationTitle>
                     <DonationDescription theme={light}>
