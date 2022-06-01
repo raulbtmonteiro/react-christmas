@@ -8,12 +8,17 @@ export const Wrapper= styled.div`
     max-width: 1170px;
     margin: 0 auto;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: 40% 60%;
     justify-content: space-between;
     align-items: center;
 
     @media screen and (max-width: 1170px) {
         padding: 0 24px;
+    }
+
+    @media screen and (max-width: 720px) {
+        grid-template-columns: 100%;
     }
 `;
 
@@ -63,6 +68,7 @@ export const Description = styled.p`
 
 export const Img = styled.img`
     max-height: 360px;
+    width: 100%;
 
     @media screen and (max-width: 720px) {
         display: none;

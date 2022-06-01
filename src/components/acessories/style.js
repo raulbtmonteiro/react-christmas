@@ -46,7 +46,13 @@ export const AcessoriesBox = styled.div`
 
     margin: 32px 0 82px;
 
+    @media screen and (max-width: 920px) {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
     @media screen and (max-width: 720px) {
+        display: flex;
         flex-direction: column;
         gap: 2em;
     }
@@ -84,8 +90,11 @@ export const CardDescription = styled.p`
 
     color: ${props => props.theme.flexDescriptionColor};
 
+    @media screen and (max-width: 920px) {
+        margin: 0.75em auto 0 auto;
+    }
+
     @media screen and (max-width: 720px) {
         font-size: 12px;
-        margin: 0.75em auto 0 auto;
     }
 `;
