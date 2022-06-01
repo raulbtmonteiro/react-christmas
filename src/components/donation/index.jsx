@@ -1,8 +1,8 @@
 import shared from '../../assets/images/shared.png'
-import DonationButton from '../donationButton'
+import { DonationButton } from '../DonationButton'
 import { Img , Container , Wrapper , Info, Title , Description } from './style'
 
-export default function Donation({theme}){
+export const Donation = ({theme}) => {
     return(
         <Container theme={theme}>
             <Wrapper>

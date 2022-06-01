@@ -33,7 +33,7 @@ export const LogoTitle = styled.h2`
 
     margin-left: 0.5em;
 
-    color: ${props => props.theme.titleColor};
+    color: ${props => props.theme.colors.titleColor};
 `;
 
 export const SocialMediaList = styled.ul`
@@ -58,7 +58,7 @@ export const ListItem = styled.a`
     width: 40px;
 
     border-radius: 50%;
-    background-color: ${props => props.theme.backgroundColorOpacity};
+    background-color: ${props => props.theme.colors.backgroundColorOpacity};
 
     @media screen and (max-width: 720px) {
         height: 30.43px;

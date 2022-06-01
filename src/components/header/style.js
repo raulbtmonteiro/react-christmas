@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { css } from 'styled-components';
 
 export const Container = styled.header`
-    background-color: ${props => props.theme.backgroundColor};
+    background-color: ${props => props.theme.colors.backgroundColor};
 `;
 
 export const Wrapper = styled.div`
@@ -43,7 +43,7 @@ export const LogoTitle = styled.h2`
 
     margin-left: 0.5em;
 
-    color: ${props => props.theme.titleColor};
+    color: ${props => props.theme.colors.titleColor};
 
     @media screen and (max-width: 720px) {
         font-size: 14px;
@@ -81,12 +81,12 @@ export const ListItem = styled.a`
 
     margin-left: 3em;
 
-    color: ${props => props.theme.titleColor};
+    color: ${props => props.theme.colors.titleColor};
     text-decoration: none;
 
     :hover{
         cursor: pointer;
-        color: ${props => props.theme.descriptionColor};
+        color: ${props => props.theme.colors.descriptionColor};
     }
 
     @media screen and (max-width: 720px) {

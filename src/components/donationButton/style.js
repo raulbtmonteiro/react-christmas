@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const Button = styled.button`
-    background-color: ${props => props.theme.backgroundButtomColor};
-    color: ${props => props.theme.buttomTextColor};
+    background-color: ${props => props.theme.colors.backgroundButtomColor};
+    color: ${props => props.theme.colors.buttomTextColor};
 
     border: none;
     border-radius: 8px;
@@ -20,7 +20,7 @@ export const Button = styled.button`
 
     :hover{
         cursor: pointer;
-        background-color: ${props => props.theme.backgroundColorOpacity};
+        background-color: ${props => props.theme.colors.backgroundColorOpacity};
     }
 
     img{

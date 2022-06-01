@@ -32,7 +32,7 @@ const boxItens = [
     }
 ]
 
-export default function Acessories({theme}){
+export const Acessories = ({theme}) => {
     return(
         <Wrapper>
             <Title theme={theme}>Acessórios</Title>

@@ -39,7 +39,7 @@ const socialMediaArray = [
     } 
 ];
 
-export default function Footer({theme}){
+export const Footer = ({theme}) =>{
     return(
         <Wrapper>
             <LogoContainer>

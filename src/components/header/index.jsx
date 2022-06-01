@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const navItens = [ 'Início' , 'Acessórios' , 'Doação' , 'Contato' ];
 
-export default function Header({theme}){
+export const Header = ({theme}) => {
     const [isVisible, setIsVisible] = useState(false)
 
     return(

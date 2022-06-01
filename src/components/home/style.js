@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container= styled.section`
-    background-color: ${props => props.theme.backgroundColor};
+    background-color: ${props => props.theme.colors.backgroundColor};
 `;
 
 export const Wrapper= styled.div`
@@ -44,7 +44,7 @@ export const Title = styled.h1`
 
     margin-top: 2em;
 
-    color: ${props => props.theme.titleColor};
+    color: ${props => props.theme.colors.titleColor};
 
     @media screen and (max-width: 720px) {
         font-size: 32px;
@@ -59,7 +59,7 @@ export const Description = styled.p`
     margin: 1.5em 0 2.5em;
     max-width: 444px;
 
-    color: ${props => props.theme.descriptionColor};
+    color: ${props => props.theme.colors.descriptionColor};
 
     @media screen and (max-width: 720px) {
         font-size: 14px;

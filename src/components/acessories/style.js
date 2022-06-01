@@ -17,7 +17,7 @@ export const Title = styled.h2`
 
     margin-top: 1em;
 
-    color: ${props => props.theme.titleColor};
+    color: ${props => props.theme.colors.titleColor};
 
     @media screen and (max-width: 720px) {
         font-size: 24px;
@@ -32,7 +32,7 @@ export const Description = styled.p`
     max-width: 477px;
     margin: 0.75em auto 0 auto;
 
-    color: ${props => props.theme.descriptionColor};
+    color: ${props => props.theme.colors.descriptionColor};
 
     @media screen and (max-width: 720px) {
         font-size: 14px;
@@ -73,7 +73,7 @@ export const CardTitle = styled.h3`
 
     margin-top: 0.85em;
 
-    color: ${props => props.theme.titleColor};
+    color: ${props => props.theme.colors.titleColor};
 
     @media screen and (max-width: 720px) {
         font-size: 14px;
@@ -88,7 +88,7 @@ export const CardDescription = styled.p`
     margin-top: 0.75em;
     max-width: 198px;
 
-    color: ${props => props.theme.flexDescriptionColor};
+    color: ${props => props.theme.colors.flexDescriptionColor};
 
     @media screen and (max-width: 920px) {
         margin: 0.75em auto 0 auto;
