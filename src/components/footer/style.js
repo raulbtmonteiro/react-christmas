@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const FooterWrapper = styled.footer`
+export const Wrapper = styled.footer`
     max-width: 1170px;
     margin: 40px auto;
 
@@ -17,7 +17,7 @@ export const FooterWrapper = styled.footer`
 
 `;
 
-export const DivLogo = styled.div`
+export const LogoContainer = styled.div`
     display: flex;
 
     @media screen and (max-width: 720px) {
@@ -36,7 +36,7 @@ export const LogoTitle = styled.h2`
     color: ${props => props.theme.titleColor};
 `;
 
-export const MediaList = styled.ul`
+export const SocialMediaList = styled.ul`
     list-style-type: none;
 
     display: flex;
@@ -48,7 +48,7 @@ export const MediaList = styled.ul`
     }
 `;
 
-export const ListItem = styled.li`
+export const ListItem = styled.a`
     display: flex;
     align-items: center;
     justify-content: center;

@@ -18,9 +18,14 @@ export const Button = styled.button`
     align-items: center;
     justify-content: center;
 
+    :hover{
+        cursor: pointer;
+        background-color: ${props => props.theme.backgroundColorOpacity};
+    }
+
     img{
         margin-right: 0.85em;
-    }
+    }                   
 
     @media screen and (max-width: 720px) {
         width: 100%;

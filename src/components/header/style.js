@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { css } from 'styled-components';
 
-export const HeaderContainer = styled.header`
+export const Container = styled.header`
     background-color: ${props => props.theme.backgroundColor};
 `;
 
@@ -14,11 +15,15 @@ export const Wrapper = styled.div`
     align-items: center;
 
     @media screen and (max-width: 1170px) {
-        padding: 0 24px;
+        padding: 20px 24px;
+    }
+
+    @media screen and (max-width: 720px) {
+        padding: 0px 24px;
     }
 `;
 
-export const DivLogo = styled.div`
+export const LogoContainer = styled.div`
     display: flex;
     align-items: center;
 
@@ -52,10 +57,24 @@ export const NavList = styled.nav`
 
     @media screen and (max-width: 720px) {
         display: none;
+
+        ${({visibility}) => visibility && css`
+            display: flex;
+            flex-direction: column;
+
+            position: absolute;
+            top: 36px;
+            right: 24px;
+            width: 8em;
+            z-index: 4;
+
+            background-color: white;
+            border-radius: 15px;
+        `}
     }
 `;
 
-export const ListItem = styled.li`
+export const ListItem = styled.a`
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -63,6 +82,17 @@ export const ListItem = styled.li`
     margin-left: 3em;
 
     color: ${props => props.theme.titleColor};
+    text-decoration: none;
+
+    :hover{
+        cursor: pointer;
+        color: ${props => props.theme.descriptionColor};
+    }
+
+    @media screen and (max-width: 720px) {
+        margin: 1em 0;
+    }
+
 `;
 
 export const HamburgerMenu = styled.div`
@@ -82,4 +112,26 @@ export const HamburgerMenu = styled.div`
             background-color: #161212;
         }
     }
+`;
+
+export const Overlay = styled.div`
+    display:none;
+
+    @media screen and (max-width: 720px) {
+        ${({visibility}) => visibility && css`
+            display: block;
+
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 3;
+
+            background-color: rgba(0,0,0, 0.5);
+        `}
+    }
+
 `;

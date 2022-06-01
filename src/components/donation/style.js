@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
-export const DonationContainer= styled.section`
+export const Container= styled.section`
     background-color: ${props => props.theme.backgroundColor};
 `;
 
-export const DonationWrapper = styled.div`
+export const Wrapper = styled.div`
     max-width: 1170px;
     margin: 0 auto;
 
@@ -17,13 +17,13 @@ export const DonationWrapper = styled.div`
     }
 `;
 
-export const DonationImg = styled.img`
+export const Img = styled.img`
     @media screen and (max-width: 720px) {
         display: none;
     }
 `;
 
-export const DonationInfo = styled.div`
+export const Info = styled.div`
     button{
         margin-bottom: 8.9em;
     }
@@ -38,7 +38,7 @@ export const DonationInfo = styled.div`
     }
 `;
 
-export const DonationTitle = styled.h2`
+export const Title = styled.h2`
     font-weight: 600;
     font-size: 48px;
     line-height: 1.08em;
@@ -52,7 +52,7 @@ export const DonationTitle = styled.h2`
     }
 `;
 
-export const DonationDescription = styled.p`
+export const Description = styled.p`
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5em;

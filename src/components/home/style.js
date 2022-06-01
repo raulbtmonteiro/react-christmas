@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
-export const HomeContainer= styled.section`
+export const Container= styled.section`
     background-color: ${props => props.theme.backgroundColor};
 `;
 
-export const HomeWrapper= styled.div`
+export const Wrapper= styled.div`
     max-width: 1170px;
     margin: 0 auto;
 
@@ -17,7 +17,7 @@ export const HomeWrapper= styled.div`
     }
 `;
 
-export const HomeInfo = styled.div`
+export const Info = styled.div`
     button{
         margin-bottom: 12em;
     }
@@ -32,7 +32,7 @@ export const HomeInfo = styled.div`
     }
 `;
 
-export const HomeTitle = styled.h1`
+export const Title = styled.h1`
     font-weight: 600;
     font-size: 48px;
     line-height: 1.08em;
@@ -46,7 +46,7 @@ export const HomeTitle = styled.h1`
     }
 `;
 
-export const HomeDescription = styled.p`
+export const Description = styled.p`
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5em;
@@ -61,7 +61,7 @@ export const HomeDescription = styled.p`
     }
 `;
 
-export const HomeImg = styled.img`
+export const Img = styled.img`
     max-height: 360px;
 
     @media screen and (max-width: 720px) {

@@ -10,7 +10,7 @@ export const Wrapper = styled.section`
     }
 `;
 
-export const AcessoriesTitle = styled.h2`
+export const Title = styled.h2`
     font-weight: 600;
     font-size: 48px;
     line-height: 1.5em;
@@ -24,7 +24,7 @@ export const AcessoriesTitle = styled.h2`
     }
 `;
 
-export const AcessoriesDescription = styled.p`
+export const Description = styled.p`
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5em;
@@ -39,7 +39,7 @@ export const AcessoriesDescription = styled.p`
     }
 `;
 
-export const AcessoriesFlex = styled.div`
+export const AcessoriesBox = styled.div`
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -52,7 +52,7 @@ export const AcessoriesFlex = styled.div`
     }
 `;
 
-export const FlexCardImg = styled.img`
+export const CardImg = styled.img`
     height: 200px;
 
     @media screen and (max-width: 720px) {
@@ -60,7 +60,7 @@ export const FlexCardImg = styled.img`
     }
 `;
 
-export const FlexCardTitle = styled.h3`
+export const CardTitle = styled.h3`
     font-weight: 500;
     font-size: 20px;
     line-height: 1.5em;
@@ -74,7 +74,7 @@ export const FlexCardTitle = styled.h3`
     }
 `;
 
-export const FlexCardDescription = styled.p`
+export const CardDescription = styled.p`
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5em;

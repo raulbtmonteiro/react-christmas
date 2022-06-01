@@ -1,8 +1,8 @@
-import Header from "./components/header/header"
-import Home from "./components/home/home"
-import Acessories from "./components/acessories/acessories"
-import Donation from "./components/donation/donation"
-import Footer from "./components/footer/footer"
+import Header from "./components/header"
+import Home from "./components/home"
+import Acessories from "./components/acessories"
+import Donation from "./components/donation"
+import Footer from "./components/footer"
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
