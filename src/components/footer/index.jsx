@@ -5,7 +5,6 @@ import instagram from '../../assets/images/social_media/instagram.svg'
 import facebook from '../../assets/images/social_media/facebook.svg'
 import frame from '../../assets/images/Frame.png'
 import { Wrapper , SocialMediaList , ListItem , LogoContainer , LogoTitle } from './style'
-import { light } from '../../themes/light'
 
 const socialMediaArray = [ 
     {   
@@ -40,12 +39,12 @@ const socialMediaArray = [
     } 
 ];
 
-export default function Footer(){
+export default function Footer({theme}){
     return(
         <Wrapper>
             <LogoContainer>
                 <img src={frame} alt='Logo do Papai Noel' />
-                <LogoTitle theme={light}>Feliz Natal</LogoTitle>
+                <LogoTitle theme={theme}>Feliz Natal</LogoTitle>
             </LogoContainer>
             <SocialMediaList>
                 {socialMediaArray.map( (item) => (
@@ -53,7 +52,7 @@ export default function Footer(){
                         href={item.link} 
                         target='_blank' 
                         key={item.socialMedia} 
-                        theme={light}>
+                        theme={theme}>
                             <img src={item.icon} alt={item.alt} />
                     </ListItem>
                 ))}

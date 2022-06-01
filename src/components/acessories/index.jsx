@@ -4,7 +4,6 @@ import socks from '../../assets/images/acessories/socks.png'
 import candy from '../../assets/images/acessories/candy.png'
 import { Wrapper, AcessoriesBox , Title , Description } from './style'
 import { CardTitle , CardDescription , CardImg } from './style'
-import { light } from '../../themes/light'
 
 const boxItens = [
     {
@@ -33,11 +32,11 @@ const boxItens = [
     }
 ]
 
-export default function Acessories(){
+export default function Acessories({theme}){
     return(
         <Wrapper>
-            <Title theme={light}>Acessórios</Title>
-            <Description theme={light}>
+            <Title theme={theme}>Acessórios</Title>
+            <Description theme={theme}>
                 Nessas festas de fim de ano mande um presente para a pessoa amada 
                 e compartilhe a alegria do Natal.
             </Description>
@@ -45,8 +44,8 @@ export default function Acessories(){
                 {boxItens.map( (item) => (
                     <div key={item.title}>
                         <CardImg src={item.img} alt={item.alt} />
-                        <CardTitle theme={light}>{item.title}</CardTitle>
-                        <CardDescription theme={light}>{item.description}</CardDescription>
+                        <CardTitle theme={theme}>{item.title}</CardTitle>
+                        <CardDescription theme={theme}>{item.description}</CardDescription>
                     </div>
                 ))}
             </AcessoriesBox>

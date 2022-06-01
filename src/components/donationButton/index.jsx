@@ -1,10 +1,9 @@
 import gift from '../../assets/images/gift.svg'
-import { light } from '../../themes/light'
 import { Button } from "./style"
 
-export default function DonationButton(){
+export default function DonationButton({theme}){
     return(
-        <Button theme={light}>
+        <Button theme={theme}>
             <img src={gift} alt='presente de natal' />
             Fazer Doação
         </Button>

@@ -4,6 +4,9 @@ import Acessories from "./components/acessories"
 import Donation from "./components/donation"
 import Footer from "./components/footer"
 import { createGlobalStyle } from "styled-components"
+import { useState } from "react"
+import { light } from "./themes/light"
+import { dark } from "./themes/dark"
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -15,16 +18,19 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export default function App() {
+
+  const[theme, setTheme] = useState(light)
+
   return (
     <>
       <GlobalStyle />
-      <Header />
+      <Header theme={theme}/>
       <main>
-        <Home />
-        <Acessories />
-        <Donation />
+        <Home theme={theme} setTheme={setTheme} />
+        <Acessories theme={theme} />
+        <Donation theme={theme} />
       </main>
-      <Footer />
+      <Footer theme={theme} />
     </>
   );
 }
