@@ -1,5 +1,5 @@
 import shared from "../../assets/images/shared.png";
-import { DonationButton } from "../DonationButton";
+import { DonationButton } from "../DonationButtona";
 import { Img, Container, Wrapper, Info, Title, Description } from "./style";
 
 export const Donation = ({ theme }) => {
