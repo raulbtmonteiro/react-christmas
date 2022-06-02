@@ -1,8 +1,8 @@
-import { Header, Home, Acessories, Donation, Footer } from "./components"
-import { createGlobalStyle } from "styled-components"
-import { useState } from "react"
-import { light } from "./themes/light"
-import { dark } from "./themes/dark"
+import { Header, Home, Acessories, Donation, Footer } from "./components";
+import { createGlobalStyle } from "styled-components";
+import { useState } from "react";
+import { light } from "./themes/light";
+import { dark } from "./themes/dark";
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -14,17 +14,16 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export default function App() {
-
-  const[theme, setTheme] = useState(light)
+  const [theme, setTheme] = useState(light);
 
   const changeTheme = () => {
-    setTheme(theme.title === 'light' ? dark : light)
-  }
+    setTheme(theme.title === "light" ? dark : light);
+  };
 
   return (
     <>
       <GlobalStyle />
-      <Header theme={theme}/>
+      <Header theme={theme} />
       <main>
         <Home theme={theme} changeTheme={changeTheme} />
         <Acessories theme={theme} />

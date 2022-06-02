@@ -1,100 +1,100 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Wrapper = styled.section`
-    max-width: 1170px;
-    margin: 0 auto;
-    text-align: center;
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
 
-    @media screen and (max-width: 1170px) {
-        padding: 0 24px;
-    }
+  @media screen and (max-width: 1170px) {
+    padding: 0 24px;
+  }
 `;
 
 export const Title = styled.h2`
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 1.5em;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5em;
 
-    margin-top: 1em;
+  margin-top: 1em;
 
-    color: ${props => props.theme.colors.titleColor};
+  color: ${(props) => props.theme.colors.titleColor};
 
-    @media screen and (max-width: 720px) {
-        font-size: 24px;
-    }
+  @media screen and (max-width: 720px) {
+    font-size: 24px;
+  }
 `;
 
 export const Description = styled.p`
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5em;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5em;
 
-    max-width: 477px;
-    margin: 0.75em auto 0 auto;
+  max-width: 477px;
+  margin: 0.75em auto 0 auto;
 
-    color: ${props => props.theme.colors.descriptionColor};
+  color: ${(props) => props.theme.colors.descriptionColor};
 
-    @media screen and (max-width: 720px) {
-        font-size: 14px;
-    }
+  @media screen and (max-width: 720px) {
+    font-size: 14px;
+  }
 `;
 
 export const AcessoriesBox = styled.div`
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+  margin: 32px 0 82px;
+
+  @media screen and (max-width: 920px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  @media screen and (max-width: 720px) {
     display: flex;
-    justify-content: space-between;
-    text-align: center;
-
-    margin: 32px 0 82px;
-
-    @media screen and (max-width: 920px) {
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-
-    @media screen and (max-width: 720px) {
-        display: flex;
-        flex-direction: column;
-        gap: 2em;
-    }
+    flex-direction: column;
+    gap: 2em;
+  }
 `;
 
 export const CardImg = styled.img`
-    height: 200px;
+  height: 200px;
 
-    @media screen and (max-width: 720px) {
-        height: 100px;
-    }
+  @media screen and (max-width: 720px) {
+    height: 100px;
+  }
 `;
 
 export const CardTitle = styled.h3`
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.5em;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5em;
 
-    margin-top: 0.85em;
+  margin-top: 0.85em;
 
-    color: ${props => props.theme.colors.titleColor};
+  color: ${(props) => props.theme.colors.titleColor};
 
-    @media screen and (max-width: 720px) {
-        font-size: 14px;
-    }
+  @media screen and (max-width: 720px) {
+    font-size: 14px;
+  }
 `;
 
 export const CardDescription = styled.p`
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5em;
 
-    margin-top: 0.75em;
-    max-width: 198px;
+  margin-top: 0.75em;
+  max-width: 198px;
 
-    color: ${props => props.theme.colors.flexDescriptionColor};
+  color: ${(props) => props.theme.colors.flexDescriptionColor};
 
-    @media screen and (max-width: 920px) {
-        margin: 0.75em auto 0 auto;
-    }
+  @media screen and (max-width: 920px) {
+    margin: 0.75em auto 0 auto;
+  }
 
-    @media screen and (max-width: 720px) {
-        font-size: 12px;
-    }
+  @media screen and (max-width: 720px) {
+    font-size: 12px;
+  }
 `;

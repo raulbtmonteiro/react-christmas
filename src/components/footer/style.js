@@ -1,73 +1,72 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Wrapper = styled.footer`
-    max-width: 1170px;
-    margin: 40px auto;
+  max-width: 1170px;
+  margin: 40px auto;
 
-    display: flex;
-    justify-content: space-between;  
+  display: flex;
+  justify-content: space-between;
 
-    @media screen and (max-width: 1170px) {
-        padding: 0 24px;
-    }
+  @media screen and (max-width: 1170px) {
+    padding: 0 24px;
+  }
 
-    @media screen and (max-width: 720px) {
-        margin: 15px auto;
-    }
-
+  @media screen and (max-width: 720px) {
+    margin: 15px auto;
+  }
 `;
 
 export const LogoContainer = styled.div`
-    display: flex;
+  display: flex;
 
-    @media screen and (max-width: 720px) {
-        display: none;
-    }
+  @media screen and (max-width: 720px) {
+    display: none;
+  }
 `;
 
 export const LogoTitle = styled.h2`
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
-    width: 5.2em;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  width: 5.2em;
 
-    margin-left: 0.5em;
+  margin-left: 0.5em;
 
-    color: ${props => props.theme.colors.titleColor};
+  color: ${(props) => props.theme.colors.titleColor};
 `;
 
 export const SocialMediaList = styled.ul`
-    list-style-type: none;
+  list-style-type: none;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    @media screen and (max-width: 720px) {
-        width: 100%;
-    }
+  @media screen and (max-width: 720px) {
+    width: 100%;
+  }
 `;
 
 export const ListItem = styled.a`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    margin-left: 43px;
-    height: 40px;
-    width: 40px;
+  margin-left: 43px;
+  height: 40px;
+  width: 40px;
 
-    border-radius: 50%;
-    background-color: ${props => props.theme.colors.backgroundColorOpacity};
+  border-radius: 50%;
+  background-color: ${(props) => props.theme.colors.backgroundColorOpacity};
 
-    @media screen and (max-width: 720px) {
-        height: 30.43px;
-        width: 30.43px;
+  @media screen and (max-width: 720px) {
+    height: 30.43px;
+    width: 30.43px;
 
-        margin-left: 0;
+    margin-left: 0;
 
-        img{
-            width: 18.26px;
-        }
+    img {
+      width: 18.26px;
     }
+  }
 `;
