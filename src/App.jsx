@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 import { useState } from "react";
 import { light } from "./themes/light";
 import { dark } from "./themes/dark";
+import { ThemeProvider } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -23,13 +24,15 @@ export default function App() {
   return (
     <>
       <GlobalStyle />
-      <Header theme={theme} />
-      <main>
-        <Home theme={theme} changeTheme={changeTheme} />
-        <Acessories theme={theme} />
-        <Donation theme={theme} />
-      </main>
-      <Footer theme={theme} />
+      <ThemeProvider theme={theme}>
+        <Header />
+        <main>
+          <Home changeTheme={changeTheme} />
+          <Acessories />
+          <Donation />
+        </main>
+        <Footer />
+      </ThemeProvider>
     </>
   );
 }
