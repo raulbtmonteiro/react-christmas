@@ -3,17 +3,17 @@
   "name": "Página de Feliz Natal",
   "icons": [
     {
-      "src": "Frame.png",
+      "src": "frame.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "png"
     },
     {
-      "src": "Frame.png",
+      "src": "frame.png",
       "type": "png",
       "sizes": "192x192"
     },
     {
-      "src": "Frame.png",
+      "src": "frame.png",
       "type": "png",
       "sizes": "512x512"
     }
